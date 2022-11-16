@@ -13,7 +13,7 @@ class ErrorRepository {
             ['03','TypeError']
         ])
     }
-    static translate(code) {
+    translate(code) {
         if (this.errors.has(code)) {
             console.log(this.errors.get(code))
         } else {
@@ -21,3 +21,7 @@ class ErrorRepository {
         }
     }
 }
+
+/*const errorRepository = new ErrorRepository();
+const result = errorRepository.translate('01');
+console.log(result);*/
